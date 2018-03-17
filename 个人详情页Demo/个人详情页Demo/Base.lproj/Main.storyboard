@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Np6-3A-VT2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z42-bg-z2T">
+            <objects>
+                <navigationController id="Np6-3A-VT2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sCu-pf-jOP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cwX-UF-9Ll" kind="relationship" relationship="rootViewController" id="wdC-8U-MLa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpW-eG-XV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-971" y="58"/>
+        </scene>
+        <!--Person View Controller-->
+        <scene sceneID="8zR-5Q-Y0B">
+            <objects>
+                <viewController id="cwX-UF-9Ll" customClass="PersonViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wrm-3i-Gi0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh6-Ez-Wfy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDC-Wu-vAG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train_2x" translatesAutoresizingMaskIntoConstraints="NO" id="nys-Kt-5gy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child_img_circle" translatesAutoresizingMaskIntoConstraints="NO" id="HcJ-tu-DpK">
+                                        <rect key="frame" x="125.5" y="160" width="125" height="125.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HcJ-tu-DpK" secondAttribute="height" multiplier="1:1" id="KYD-D3-XNc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nys-Kt-5gy" firstAttribute="leading" secondItem="JDC-Wu-vAG" secondAttribute="leading" id="2cG-46-f9A"/>
+                                    <constraint firstItem="HcJ-tu-DpK" firstAttribute="centerX" secondItem="JDC-Wu-vAG" secondAttribute="centerX" id="2ji-KL-2Wt"/>
+                                    <constraint firstItem="nys-Kt-5gy" firstAttribute="top" secondItem="JDC-Wu-vAG" secondAttribute="top" id="MwT-NY-CwR"/>
+                                    <constraint firstItem="HcJ-tu-DpK" firstAttribute="width" secondItem="nys-Kt-5gy" secondAttribute="width" multiplier="1:3" id="PdK-Bg-lxj"/>
+                                    <constraint firstAttribute="bottom" secondItem="nys-Kt-5gy" secondAttribute="bottom" id="Xb2-1h-Mxb"/>
+                                    <constraint firstItem="HcJ-tu-DpK" firstAttribute="centerY" secondItem="JDC-Wu-vAG" secondAttribute="bottom" id="gfN-Np-IlP"/>
+                                    <constraint firstAttribute="trailing" secondItem="nys-Kt-5gy" secondAttribute="trailing" id="ylC-uQ-bVf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jy4-GD-uKu" firstAttribute="trailing" secondItem="bh6-Ez-Wfy" secondAttribute="trailing" id="8Wq-FN-Wwq"/>
+                            <constraint firstItem="JDC-Wu-vAG" firstAttribute="trailing" secondItem="jy4-GD-uKu" secondAttribute="trailing" id="CQh-kA-JPi"/>
+                            <constraint firstItem="bh6-Ez-Wfy" firstAttribute="leading" secondItem="jy4-GD-uKu" secondAttribute="leading" id="P9f-Z9-yCv"/>
+                            <constraint firstItem="JDC-Wu-vAG" firstAttribute="top" secondItem="wrm-3i-Gi0" secondAttribute="top" id="eJJ-LM-GEK"/>
+                            <constraint firstItem="bh6-Ez-Wfy" firstAttribute="top" secondItem="wrm-3i-Gi0" secondAttribute="top" id="f31-nD-NNf"/>
+                            <constraint firstItem="JDC-Wu-vAG" firstAttribute="leading" secondItem="jy4-GD-uKu" secondAttribute="leading" id="slh-cW-qkY"/>
+                            <constraint firstItem="JDC-Wu-vAG" firstAttribute="height" secondItem="wrm-3i-Gi0" secondAttribute="height" multiplier="1:3" id="vbs-yQ-ntQ"/>
+                            <constraint firstItem="jy4-GD-uKu" firstAttribute="bottom" secondItem="bh6-Ez-Wfy" secondAttribute="bottom" id="z82-uM-hxZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jy4-GD-uKu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SxI-sP-oBn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="icon" destination="HcJ-tu-DpK" id="jTM-CT-L5B"/>
+                        <outlet property="tableView" destination="bh6-Ez-Wfy" id="orZ-XR-57C"/>
+                        <outlet property="topImageView" destination="nys-Kt-5gy" id="xe7-VY-Z66"/>
+                        <outlet property="topViewHeightConstraint" destination="vbs-yQ-ntQ" id="QPQ-gS-0Ni"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaA-0l-j5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="56.221889055472268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="child_img_circle" width="673" height="673"/>
+        <image name="train_2x" width="1172" height="870"/>
+    </resources>
+</document>

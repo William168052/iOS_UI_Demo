@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  ChargeBook
+//
+//  Created by William on 2018/2/17.
+//  Copyright © 2018年 William. All rights reserved.
+//
+#import <Foundation/Foundation.h>
+
+#define FilePath(name) [NSString stringWithFormat:@"%@/Documents/%@.plist",NSHomeDirectory(),name]
+#define ArchiveFilePath(name) [NSString stringWithFormat:@"%@/Documents/%@.data",NSHomeDirectory(),name]
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
+typedef enum {
+    BillListRemarksStockIn = 0,
+    BillListRemarksSellOut = 1
+}BillListRemarks;
+
+
+//返回时间Component的对象
+static NSDateComponents * dateComponent(NSDate *date){
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    //实例化一个日期的对象,这个对象不是NSDate的是NSDateComponents的
+    
+    NSDateComponents *com = [[NSDateComponents alloc] init];
+    
+    //做一个标示，表示我们要什么内容
+    
+    NSInteger flags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    
+    //从一个日期里面把这些内容取出来
+    
+    com = [calendar components:flags fromDate:date];
+    return com;
+}
+
+
+
+
+
+
+
+
+

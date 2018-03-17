@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5g3-gA-hp3" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5K-yw-siE">
+                    <rect key="frame" x="20" y="5" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="I7w-4q-Kqr"/>
+                        <constraint firstAttribute="width" constant="55" id="JVa-38-D8V"/>
+                        <constraint firstAttribute="width" secondItem="i5K-yw-siE" secondAttribute="height" multiplier="1:1" id="bJC-6s-zfA"/>
+                    </constraints>
+                    <state key="normal" image="child_img_circle"/>
+                    <connections>
+                        <action selector="leftBtnClicked:" destination="5g3-gA-hp3" eventType="touchUpInside" id="TAl-lA-Vh9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6l-rm-SMq">
+                    <rect key="frame" x="164" y="19" width="47" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCV-J8-HWd">
+                    <rect key="frame" x="325" y="17" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="X8w-jh-RfH"/>
+                        <constraint firstAttribute="width" secondItem="TCV-J8-HWd" secondAttribute="height" multiplier="1:1" id="cvO-oM-RZr"/>
+                        <constraint firstAttribute="width" constant="30" id="y2A-OK-9Hn"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="add_button_default"/>
+                    <state key="highlighted" backgroundImage="add_button_HighLighted"/>
+                    <connections>
+                        <action selector="rightBtnClicked:" destination="5g3-gA-hp3" eventType="touchUpInside" id="wv6-Af-JwN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="i5K-yw-siE" firstAttribute="top" secondItem="9JA-ep-hej" secondAttribute="top" constant="5" id="6cn-J8-cM1"/>
+                <constraint firstItem="I6l-rm-SMq" firstAttribute="top" secondItem="9JA-ep-hej" secondAttribute="top" constant="19" id="CYt-bs-NwE"/>
+                <constraint firstItem="I6l-rm-SMq" firstAttribute="centerX" secondItem="5g3-gA-hp3" secondAttribute="centerX" id="NE3-Fp-wtd"/>
+                <constraint firstItem="9JA-ep-hej" firstAttribute="bottom" secondItem="i5K-yw-siE" secondAttribute="bottom" constant="4" id="Sp5-nn-zWN"/>
+                <constraint firstItem="TCV-J8-HWd" firstAttribute="top" secondItem="9JA-ep-hej" secondAttribute="top" constant="17" id="YQ4-0A-iBc"/>
+                <constraint firstItem="9JA-ep-hej" firstAttribute="trailing" secondItem="TCV-J8-HWd" secondAttribute="trailing" constant="20" id="Zen-lN-Tdn"/>
+                <constraint firstItem="i5K-yw-siE" firstAttribute="leading" secondItem="9JA-ep-hej" secondAttribute="leading" constant="20" id="c0i-7l-Ome"/>
+                <constraint firstItem="9JA-ep-hej" firstAttribute="bottom" secondItem="TCV-J8-HWd" secondAttribute="bottom" constant="17" id="kqi-Fl-5wY"/>
+                <constraint firstItem="9JA-ep-hej" firstAttribute="bottom" secondItem="I6l-rm-SMq" secondAttribute="bottom" constant="19" id="lAX-qG-2Yc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="9JA-ep-hej"/>
+            <connections>
+                <outlet property="leftBtn" destination="i5K-yw-siE" id="TRu-Uo-WKe"/>
+                <outlet property="rightBtn" destination="TCV-J8-HWd" id="Gz2-mS-dzk"/>
+                <outlet property="title" destination="I6l-rm-SMq" id="lzm-C3-rTg"/>
+            </connections>
+            <point key="canvasLocation" x="159.5" y="-262"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_button_HighLighted" width="40" height="40"/>
+        <image name="add_button_default" width="40" height="40"/>
+        <image name="child_img_circle" width="673" height="673"/>
+    </resources>
+</document>

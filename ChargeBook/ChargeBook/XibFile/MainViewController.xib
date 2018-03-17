@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="addLogData" destination="oF2-bK-EWT" id="5DB-9e-Itd"/>
+                <outlet property="bottomView" destination="k5E-x5-bEr" id="fF1-bM-DUp"/>
+                <outlet property="listTableView" destination="msc-Jk-cvF" id="xPp-2K-hDG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="msc-Jk-cvF">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5E-x5-bEr">
+                    <rect key="frame" x="0.0" y="546.5" width="375" height="120.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF2-bK-EWT">
+                            <rect key="frame" x="158" y="30.5" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="oF2-bK-EWT" secondAttribute="height" multiplier="1:1" id="fYs-Gm-kCn"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="edit_button_Default"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oF2-bK-EWT" firstAttribute="height" secondItem="k5E-x5-bEr" secondAttribute="height" multiplier="1:2" id="12f-lp-6Jt"/>
+                        <constraint firstItem="oF2-bK-EWT" firstAttribute="centerY" secondItem="k5E-x5-bEr" secondAttribute="centerY" id="SAy-C3-fva"/>
+                        <constraint firstItem="oF2-bK-EWT" firstAttribute="centerX" secondItem="k5E-x5-bEr" secondAttribute="centerX" id="nNj-2b-weU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="msc-Jk-cvF" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="0mb-Pu-eak"/>
+                <constraint firstItem="k5E-x5-bEr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6X1-tV-a0b"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="msc-Jk-cvF" secondAttribute="bottom" id="9g3-cZ-MIt"/>
+                <constraint firstItem="k5E-x5-bEr" firstAttribute="height" secondItem="msc-Jk-cvF" secondAttribute="height" multiplier="1:5" id="HHa-S6-pyI"/>
+                <constraint firstItem="msc-Jk-cvF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="RVD-c9-U6C"/>
+                <constraint firstItem="k5E-x5-bEr" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="ezy-lJ-JSM"/>
+                <constraint firstItem="k5E-x5-bEr" firstAttribute="bottom" secondItem="msc-Jk-cvF" secondAttribute="bottom" id="rDp-dv-oe2"/>
+                <constraint firstItem="msc-Jk-cvF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="x65-iU-bEo"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit_button_Default" width="50" height="50"/>
+    </resources>
+</document>

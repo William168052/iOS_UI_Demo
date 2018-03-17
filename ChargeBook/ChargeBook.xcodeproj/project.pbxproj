@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D073E282035CBE900622212 /* NSString+NSStringFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D073E272035CBE900622212 /* NSString+NSStringFormat.m */; };
+		3DA26D152037155400458E78 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA26D132037155400458E78 /* SettingViewController.m */; };
+		3DA26D162037155400458E78 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA26D142037155400458E78 /* SettingViewController.xib */; };
+		3DA26D1E203897CB00458E78 /* PlistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA26D1D203897CB00458E78 /* PlistManager.m */; };
+		3DCF22A520330A32000911EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22A420330A32000911EA /* AppDelegate.m */; };
+		3DCF22A820330A32000911EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22A720330A32000911EA /* ViewController.m */; };
+		3DCF22AB20330A32000911EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF22A920330A32000911EA /* Main.storyboard */; };
+		3DCF22AD20330A32000911EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF22AC20330A32000911EA /* Assets.xcassets */; };
+		3DCF22B020330A32000911EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF22AE20330A32000911EA /* LaunchScreen.storyboard */; };
+		3DCF22B320330A32000911EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22B220330A32000911EA /* main.m */; };
+		3DCF22BD20330A32000911EA /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22BC20330A32000911EA /* ___Tests.m */; };
+		3DCF22C820330A32000911EA /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22C720330A32000911EA /* ___UITests.m */; };
+		3DCF22D820330C49000911EA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22D620330C49000911EA /* MainViewController.m */; };
+		3DCF22D920330C49000911EA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF22D720330C49000911EA /* MainViewController.xib */; };
+		3DCF22E2203325DE000911EA /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22E0203325DE000911EA /* AddViewController.m */; };
+		3DCF22E3203325DE000911EA /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF22E1203325DE000911EA /* AddViewController.xib */; };
+		3DCF22E720335C7B000911EA /* ProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF22E520335C7B000911EA /* ProjectTableViewCell.m */; };
+		3DCF22E820335C7B000911EA /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF22E620335C7B000911EA /* ProjectTableViewCell.xib */; };
+		3DCF2348203400D4000911EA /* CLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF2346203400D4000911EA /* CLAlertView.m */; };
+		3DCF234B20347B6E000911EA /* BillList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF234A20347B6E000911EA /* BillList.m */; };
+		3DCF234E20347E67000911EA /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF234D20347E67000911EA /* Product.m */; };
+		3DE359BB2041066900F6CB15 /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE359BA2041066900F6CB15 /* NSDictionary+NSDictionaryCategory.m */; };
+		3DE359BE2041081700F6CB15 /* BillListLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE359BD2041081700F6CB15 /* BillListLibrary.m */; };
+		3DE359C52041A99500F6CB15 /* BillListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE359C32041A99500F6CB15 /* BillListTableViewCell.m */; };
+		3DE359C62041A99500F6CB15 /* BillListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE359C42041A99500F6CB15 /* BillListTableViewCell.xib */; };
+		3DE359CC2043EB4700F6CB15 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE359CB2043EB4700F6CB15 /* DatePickerView.m */; };
+		3DE359CE2043EB5B00F6CB15 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE359CD2043EB5B00F6CB15 /* DatePickerView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DCF22B920330A32000911EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DCF229820330A32000911EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DCF229F20330A32000911EA;
+			remoteInfo = ChargeBook;
+		};
+		3DCF22C420330A32000911EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DCF229820330A32000911EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DCF229F20330A32000911EA;
+			remoteInfo = ChargeBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D073E262035CBE900622212 /* NSString+NSStringFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringFormat.h"; sourceTree = "<group>"; };
+		3D073E272035CBE900622212 /* NSString+NSStringFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringFormat.m"; sourceTree = "<group>"; };
+		3DA26D122037155400458E78 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		3DA26D132037155400458E78 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		3DA26D142037155400458E78 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		3DA26D19203887FD00458E78 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3DA26D1C203897CB00458E78 /* PlistManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistManager.h; sourceTree = "<group>"; };
+		3DA26D1D203897CB00458E78 /* PlistManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistManager.m; sourceTree = "<group>"; };
+		3DCF22A020330A32000911EA /* ChargeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCF22A320330A32000911EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DCF22A420330A32000911EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DCF22A620330A32000911EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DCF22A720330A32000911EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DCF22AA20330A32000911EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DCF22AC20330A32000911EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DCF22AF20330A32000911EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DCF22B120330A32000911EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCF22B220330A32000911EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DCF22B820330A32000911EA /* ChargeBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCF22BC20330A32000911EA /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
+		3DCF22BE20330A32000911EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCF22C320330A32000911EA /* ChargeBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCF22C720330A32000911EA /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
+		3DCF22C920330A32000911EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCF22D520330C49000911EA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3DCF22D620330C49000911EA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3DCF22D720330C49000911EA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3DCF22DF203325DE000911EA /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		3DCF22E0203325DE000911EA /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		3DCF22E1203325DE000911EA /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		3DCF22E420335C7B000911EA /* ProjectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectTableViewCell.h; sourceTree = "<group>"; };
+		3DCF22E520335C7B000911EA /* ProjectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTableViewCell.m; sourceTree = "<group>"; };
+		3DCF22E620335C7B000911EA /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
+		3DCF2346203400D4000911EA /* CLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAlertView.m; sourceTree = "<group>"; };
+		3DCF2347203400D4000911EA /* CLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAlertView.h; sourceTree = "<group>"; };
+		3DCF234920347B6E000911EA /* BillList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillList.h; sourceTree = "<group>"; };
+		3DCF234A20347B6E000911EA /* BillList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillList.m; sourceTree = "<group>"; };
+		3DCF234C20347E67000911EA /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		3DCF234D20347E67000911EA /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		3DE359B92041066900F6CB15 /* NSDictionary+NSDictionaryCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NSDictionaryCategory.h"; sourceTree = "<group>"; };
+		3DE359BA2041066900F6CB15 /* NSDictionary+NSDictionaryCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSDictionaryCategory.m"; sourceTree = "<group>"; };
+		3DE359BC2041081700F6CB15 /* BillListLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillListLibrary.h; sourceTree = "<group>"; };
+		3DE359BD2041081700F6CB15 /* BillListLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillListLibrary.m; sourceTree = "<group>"; };
+		3DE359C22041A99500F6CB15 /* BillListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillListTableViewCell.h; sourceTree = "<group>"; };
+		3DE359C32041A99500F6CB15 /* BillListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillListTableViewCell.m; sourceTree = "<group>"; };
+		3DE359C42041A99500F6CB15 /* BillListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillListTableViewCell.xib; sourceTree = "<group>"; };
+		3DE359CA2043EB4700F6CB15 /* DatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
+		3DE359CB2043EB4700F6CB15 /* DatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
+		3DE359CD2043EB5B00F6CB15 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DCF229D20330A32000911EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCF22B520330A32000911EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCF22C020330A32000911EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DA26D07203690B600458E78 /* CLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF2347203400D4000911EA /* CLAlertView.h */,
+				3DCF2346203400D4000911EA /* CLAlertView.m */,
+			);
+			path = CLAlertView;
+			sourceTree = "<group>";
+		};
+		3DA26D082036911700458E78 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22A320330A32000911EA /* AppDelegate.h */,
+				3DCF22A420330A32000911EA /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3DA26D092036912D00458E78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22A620330A32000911EA /* ViewController.h */,
+				3DCF22A720330A32000911EA /* ViewController.m */,
+				3DCF22D520330C49000911EA /* MainViewController.h */,
+				3DCF22D620330C49000911EA /* MainViewController.m */,
+				3DCF22DF203325DE000911EA /* AddViewController.h */,
+				3DCF22E0203325DE000911EA /* AddViewController.m */,
+				3DA26D122037155400458E78 /* SettingViewController.h */,
+				3DA26D132037155400458E78 /* SettingViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3DA26D0A2036915800458E78 /* XibFile */ = {
+			isa = PBXGroup;
+			children = (
+				3DA26D142037155400458E78 /* SettingViewController.xib */,
+				3DCF22D720330C49000911EA /* MainViewController.xib */,
+				3DCF22E1203325DE000911EA /* AddViewController.xib */,
+				3DCF22E620335C7B000911EA /* ProjectTableViewCell.xib */,
+				3DE359C42041A99500F6CB15 /* BillListTableViewCell.xib */,
+				3DE359CD2043EB5B00F6CB15 /* DatePickerView.xib */,
+			);
+			path = XibFile;
+			sourceTree = "<group>";
+		};
+		3DA26D0B203691CC00458E78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22E420335C7B000911EA /* ProjectTableViewCell.h */,
+				3DCF22E520335C7B000911EA /* ProjectTableViewCell.m */,
+				3DE359C22041A99500F6CB15 /* BillListTableViewCell.h */,
+				3DE359C32041A99500F6CB15 /* BillListTableViewCell.m */,
+				3DCF234920347B6E000911EA /* BillList.h */,
+				3DCF234A20347B6E000911EA /* BillList.m */,
+				3DE359BC2041081700F6CB15 /* BillListLibrary.h */,
+				3DE359BD2041081700F6CB15 /* BillListLibrary.m */,
+				3DCF234C20347E67000911EA /* Product.h */,
+				3DCF234D20347E67000911EA /* Product.m */,
+				3DA26D1C203897CB00458E78 /* PlistManager.h */,
+				3DA26D1D203897CB00458E78 /* PlistManager.m */,
+				3DE359CA2043EB4700F6CB15 /* DatePickerView.h */,
+				3DE359CB2043EB4700F6CB15 /* DatePickerView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3DA26D0C203691EC00458E78 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3D073E262035CBE900622212 /* NSString+NSStringFormat.h */,
+				3D073E272035CBE900622212 /* NSString+NSStringFormat.m */,
+				3DE359B92041066900F6CB15 /* NSDictionary+NSDictionaryCategory.h */,
+				3DE359BA2041066900F6CB15 /* NSDictionary+NSDictionaryCategory.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3DA26D0E2036DD5200458E78 /* storyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22A920330A32000911EA /* Main.storyboard */,
+				3DCF22AE20330A32000911EA /* LaunchScreen.storyboard */,
+			);
+			path = storyBoard;
+			sourceTree = "<group>";
+		};
+		3DA26D0F2036DD8200458E78 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22B220330A32000911EA /* main.m */,
+				3DA26D19203887FD00458E78 /* PrefixHeader.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3DCF229720330A32000911EA = {
+			isa = PBXGroup;
+			children = (
+				3DCF22A220330A32000911EA /* ChargeBook */,
+				3DCF22BB20330A32000911EA /* ChargeBookTests */,
+				3DCF22C620330A32000911EA /* ChargeBookUITests */,
+				3DCF22A120330A32000911EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DCF22A120330A32000911EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22A020330A32000911EA /* ChargeBook.app */,
+				3DCF22B820330A32000911EA /* ChargeBookTests.xctest */,
+				3DCF22C320330A32000911EA /* ChargeBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCF22A220330A32000911EA /* ChargeBook */ = {
+			isa = PBXGroup;
+			children = (
+				3DA26D082036911700458E78 /* AppDelegate */,
+				3DA26D092036912D00458E78 /* ViewController */,
+				3DA26D0A2036915800458E78 /* XibFile */,
+				3DA26D0B203691CC00458E78 /* Classes */,
+				3DA26D0C203691EC00458E78 /* Categories */,
+				3DA26D0E2036DD5200458E78 /* storyBoard */,
+				3DA26D07203690B600458E78 /* CLAlertView */,
+				3DA26D0F2036DD8200458E78 /* SupportingFiles */,
+				3DCF22AC20330A32000911EA /* Assets.xcassets */,
+				3DCF22B120330A32000911EA /* Info.plist */,
+			);
+			path = ChargeBook;
+			sourceTree = "<group>";
+		};
+		3DCF22BB20330A32000911EA /* ChargeBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22BC20330A32000911EA /* ___Tests.m */,
+				3DCF22BE20330A32000911EA /* Info.plist */,
+			);
+			path = ChargeBookTests;
+			sourceTree = "<group>";
+		};
+		3DCF22C620330A32000911EA /* ChargeBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF22C720330A32000911EA /* ___UITests.m */,
+				3DCF22C920330A32000911EA /* Info.plist */,
+			);
+			path = ChargeBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DCF229F20330A32000911EA /* ChargeBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCF22CC20330A32000911EA /* Build configuration list for PBXNativeTarget "ChargeBook" */;
+			buildPhases = (
+				3DCF229C20330A32000911EA /* Sources */,
+				3DCF229D20330A32000911EA /* Frameworks */,
+				3DCF229E20330A32000911EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChargeBook;
+			productName = ChargeBook;
+			productReference = 3DCF22A020330A32000911EA /* ChargeBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DCF22B720330A32000911EA /* ChargeBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCF22CF20330A32000911EA /* Build configuration list for PBXNativeTarget "ChargeBookTests" */;
+			buildPhases = (
+				3DCF22B420330A32000911EA /* Sources */,
+				3DCF22B520330A32000911EA /* Frameworks */,
+				3DCF22B620330A32000911EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DCF22BA20330A32000911EA /* PBXTargetDependency */,
+			);
+			name = ChargeBookTests;
+			productName = ChargeBookTests;
+			productReference = 3DCF22B820330A32000911EA /* ChargeBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DCF22C220330A32000911EA /* ChargeBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCF22D220330A32000911EA /* Build configuration list for PBXNativeTarget "ChargeBookUITests" */;
+			buildPhases = (
+				3DCF22BF20330A32000911EA /* Sources */,
+				3DCF22C020330A32000911EA /* Frameworks */,
+				3DCF22C120330A32000911EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DCF22C520330A32000911EA /* PBXTargetDependency */,
+			);
+			name = ChargeBookUITests;
+			productName = ChargeBookUITests;
+			productReference = 3DCF22C320330A32000911EA /* ChargeBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DCF229820330A32000911EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = William;
+				TargetAttributes = {
+					3DCF229F20330A32000911EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3DCF22B720330A32000911EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3DCF229F20330A32000911EA;
+					};
+					3DCF22C220330A32000911EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3DCF229F20330A32000911EA;
+					};
+				};
+			};
+			buildConfigurationList = 3DCF229B20330A32000911EA /* Build configuration list for PBXProject "ChargeBook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DCF229720330A32000911EA;
+			productRefGroup = 3DCF22A120330A32000911EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DCF229F20330A32000911EA /* ChargeBook */,
+				3DCF22B720330A32000911EA /* ChargeBookTests */,
+				3DCF22C220330A32000911EA /* ChargeBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DCF229E20330A32000911EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCF22B020330A32000911EA /* LaunchScreen.storyboard in Resources */,
+				3DA26D162037155400458E78 /* SettingViewController.xib in Resources */,
+				3DCF22E820335C7B000911EA /* ProjectTableViewCell.xib in Resources */,
+				3DE359CE2043EB5B00F6CB15 /* DatePickerView.xib in Resources */,
+				3DCF22AD20330A32000911EA /* Assets.xcassets in Resources */,
+				3DCF22E3203325DE000911EA /* AddViewController.xib in Resources */,
+				3DCF22AB20330A32000911EA /* Main.storyboard in Resources */,
+				3DCF22D920330C49000911EA /* MainViewController.xib in Resources */,
+				3DE359C62041A99500F6CB15 /* BillListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCF22B620330A32000911EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCF22C120330A32000911EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DCF229C20330A32000911EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA26D1E203897CB00458E78 /* PlistManager.m in Sources */,
+				3DE359BB2041066900F6CB15 /* NSDictionary+NSDictionaryCategory.m in Sources */,
+				3DE359CC2043EB4700F6CB15 /* DatePickerView.m in Sources */,
+				3DCF22E2203325DE000911EA /* AddViewController.m in Sources */,
+				3DCF2348203400D4000911EA /* CLAlertView.m in Sources */,
+				3DCF22A820330A32000911EA /* ViewController.m in Sources */,
+				3DCF22B320330A32000911EA /* main.m in Sources */,
+				3DCF22A520330A32000911EA /* AppDelegate.m in Sources */,
+				3DE359C52041A99500F6CB15 /* BillListTableViewCell.m in Sources */,
+				3DCF234B20347B6E000911EA /* BillList.m in Sources */,
+				3DCF234E20347E67000911EA /* Product.m in Sources */,
+				3D073E282035CBE900622212 /* NSString+NSStringFormat.m in Sources */,
+				3DE359BE2041081700F6CB15 /* BillListLibrary.m in Sources */,
+				3DCF22D820330C49000911EA /* MainViewController.m in Sources */,
+				3DCF22E720335C7B000911EA /* ProjectTableViewCell.m in Sources */,
+				3DA26D152037155400458E78 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCF22B420330A32000911EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCF22BD20330A32000911EA /* ___Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCF22BF20330A32000911EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCF22C820330A32000911EA /* ___UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DCF22BA20330A32000911EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DCF229F20330A32000911EA /* ChargeBook */;
+			targetProxy = 3DCF22B920330A32000911EA /* PBXContainerItemProxy */;
+		};
+		3DCF22C520330A32000911EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DCF229F20330A32000911EA /* ChargeBook */;
+			targetProxy = 3DCF22C420330A32000911EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DCF22A920330A32000911EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DCF22AA20330A32000911EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DCF22AE20330A32000911EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DCF22AF20330A32000911EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DCF22CA20330A32000911EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DCF22CB20330A32000911EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DCF22CD20330A32000911EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ChargeBook/SupportingFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = ChargeBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3DCF22CE20330A32000911EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ChargeBook/SupportingFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = ChargeBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3DCF22D020330A32000911EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = ChargeBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChargeBook.app/ChargeBook";
+			};
+			name = Debug;
+		};
+		3DCF22D120330A32000911EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = ChargeBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChargeBook.app/ChargeBook";
+			};
+			name = Release;
+		};
+		3DCF22D320330A32000911EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = ChargeBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChargeBook;
+			};
+			name = Debug;
+		};
+		3DCF22D420330A32000911EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = ChargeBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChargeBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DCF229B20330A32000911EA /* Build configuration list for PBXProject "ChargeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCF22CA20330A32000911EA /* Debug */,
+				3DCF22CB20330A32000911EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DCF22CC20330A32000911EA /* Build configuration list for PBXNativeTarget "ChargeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCF22CD20330A32000911EA /* Debug */,
+				3DCF22CE20330A32000911EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DCF22CF20330A32000911EA /* Build configuration list for PBXNativeTarget "ChargeBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCF22D020330A32000911EA /* Debug */,
+				3DCF22D120330A32000911EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DCF22D220330A32000911EA /* Build configuration list for PBXNativeTarget "ChargeBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCF22D320330A32000911EA /* Debug */,
+				3DCF22D420330A32000911EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DCF229820330A32000911EA /* Project object */;
+}
