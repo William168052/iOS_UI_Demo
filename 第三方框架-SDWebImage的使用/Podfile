@@ -1,0 +1,5 @@
+platform :ios,'11.2'
+target '第三方框架-SDWebImage的使用' do
+pod 'SDWebImage', '~> 4.3.3'
+pod 'FLAnimatedImage', '~> 1.0.12'
+end
