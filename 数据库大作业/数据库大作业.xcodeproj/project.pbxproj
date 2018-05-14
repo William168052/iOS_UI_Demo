@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2F79EC20A9AD910086768D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F79EB20A9AD910086768D /* AppDelegate.swift */; };
+		3D2F79F320A9AD930086768D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2F79F220A9AD930086768D /* Assets.xcassets */; };
+		3D2F79F620A9AD930086768D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2F79F420A9AD930086768D /* LaunchScreen.storyboard */; };
+		3D2F7A0120A9AD930086768D /* ______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F7A0020A9AD930086768D /* ______Tests.swift */; };
+		3D2F7A0C20A9AD930086768D /* ______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F7A0B20A9AD930086768D /* ______UITests.swift */; };
+		3D92940220A9BE2E00365514 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940020A9BE2E00365514 /* BasicViewController.swift */; };
+		3D92940320A9BE2E00365514 /* BasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D92940120A9BE2E00365514 /* BasicViewController.xib */; };
+		3D92940620A9BECB00365514 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940420A9BECB00365514 /* LoginViewController.swift */; };
+		3D92940720A9BECB00365514 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D92940520A9BECB00365514 /* LoginViewController.xib */; };
+		3D92940A20A9BF5500365514 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940820A9BF5500365514 /* RegistViewController.swift */; };
+		3D92940B20A9BF5500365514 /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D92940920A9BF5500365514 /* RegistViewController.xib */; };
+		3D92940E20A9D2EB00365514 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940D20A9D2EB00365514 /* User.swift */; };
+		3D92941020A9D3B900365514 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940F20A9D3B900365514 /* Attributes.swift */; };
+		A2CA439830B75AAB7315B613 /* Pods_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE367E9BA92D56EA35ABEC3 /* Pods_______.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D2F79FD20A9AD930086768D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F79E020A9AD910086768D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2F79E720A9AD910086768D;
+			remoteInfo = "数据库大作业";
+		};
+		3D2F7A0820A9AD930086768D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F79E020A9AD910086768D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2F79E720A9AD910086768D;
+			remoteInfo = "数据库大作业";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D2F79E820A9AD910086768D /* 数据库大作业.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "数据库大作业.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2F79EB20A9AD910086768D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D2F79F220A9AD930086768D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D2F79F520A9AD930086768D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D2F79F720A9AD930086768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2F79FC20A9AD930086768D /* 数据库大作业Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据库大作业Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2F7A0020A9AD930086768D /* ______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______Tests.swift"; sourceTree = "<group>"; };
+		3D2F7A0220A9AD930086768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2F7A0720A9AD930086768D /* 数据库大作业UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据库大作业UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2F7A0B20A9AD930086768D /* ______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______UITests.swift"; sourceTree = "<group>"; };
+		3D2F7A0D20A9AD930086768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D92940020A9BE2E00365514 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		3D92940120A9BE2E00365514 /* BasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicViewController.xib; sourceTree = "<group>"; };
+		3D92940420A9BECB00365514 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3D92940520A9BECB00365514 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3D92940820A9BF5500365514 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		3D92940920A9BF5500365514 /* RegistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
+		3D92940D20A9D2EB00365514 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3D92940F20A9D3B900365514 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
+		3DE2C0D920A9EC77003DE4AE /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		8DE367E9BA92D56EA35ABEC3 /* Pods_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98AFEAF850F5498F8849B76 /* Pods-数据库大作业.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-数据库大作业.release.xcconfig"; path = "Pods/Target Support Files/Pods-数据库大作业/Pods-数据库大作业.release.xcconfig"; sourceTree = "<group>"; };
+		DC9219E29A8F2AED955344DF /* Pods-数据库大作业.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-数据库大作业.debug.xcconfig"; path = "Pods/Target Support Files/Pods-数据库大作业/Pods-数据库大作业.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2F79E520A9AD910086768D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CA439830B75AAB7315B613 /* Pods_______.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2F79F920A9AD930086768D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2F7A0420A9AD930086768D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20ECCDABC1E76FF8316759C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DE367E9BA92D56EA35ABEC3 /* Pods_______.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D2F79DF20A9AD910086768D = {
+			isa = PBXGroup;
+			children = (
+				3D2F79EA20A9AD910086768D /* 数据库大作业 */,
+				3D2F79FF20A9AD930086768D /* 数据库大作业Tests */,
+				3D2F7A0A20A9AD930086768D /* 数据库大作业UITests */,
+				3D2F79E920A9AD910086768D /* Products */,
+				5C900F6EDBCDB2E58E8EC7F5 /* Pods */,
+				20ECCDABC1E76FF8316759C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D2F79E920A9AD910086768D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2F79E820A9AD910086768D /* 数据库大作业.app */,
+				3D2F79FC20A9AD930086768D /* 数据库大作业Tests.xctest */,
+				3D2F7A0720A9AD930086768D /* 数据库大作业UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D2F79EA20A9AD910086768D /* 数据库大作业 */ = {
+			isa = PBXGroup;
+			children = (
+				3D2F79EB20A9AD910086768D /* AppDelegate.swift */,
+				3D92940420A9BECB00365514 /* LoginViewController.swift */,
+				3D92940020A9BE2E00365514 /* BasicViewController.swift */,
+				3D92940820A9BF5500365514 /* RegistViewController.swift */,
+				3D92940D20A9D2EB00365514 /* User.swift */,
+				3D92940F20A9D3B900365514 /* Attributes.swift */,
+				3D2F79F220A9AD930086768D /* Assets.xcassets */,
+				3DE2C0D920A9EC77003DE4AE /* BridgingHeader.h */,
+				3D92940C20A9BF6100365514 /* XIB */,
+				3D2F79F420A9AD930086768D /* LaunchScreen.storyboard */,
+				3D2F79F720A9AD930086768D /* Info.plist */,
+			);
+			path = "数据库大作业";
+			sourceTree = "<group>";
+		};
+		3D2F79FF20A9AD930086768D /* 数据库大作业Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D2F7A0020A9AD930086768D /* ______Tests.swift */,
+				3D2F7A0220A9AD930086768D /* Info.plist */,
+			);
+			path = "数据库大作业Tests";
+			sourceTree = "<group>";
+		};
+		3D2F7A0A20A9AD930086768D /* 数据库大作业UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D2F7A0B20A9AD930086768D /* ______UITests.swift */,
+				3D2F7A0D20A9AD930086768D /* Info.plist */,
+			);
+			path = "数据库大作业UITests";
+			sourceTree = "<group>";
+		};
+		3D92940C20A9BF6100365514 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				3D92940520A9BECB00365514 /* LoginViewController.xib */,
+				3D92940120A9BE2E00365514 /* BasicViewController.xib */,
+				3D92940920A9BF5500365514 /* RegistViewController.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		5C900F6EDBCDB2E58E8EC7F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9219E29A8F2AED955344DF /* Pods-数据库大作业.debug.xcconfig */,
+				D98AFEAF850F5498F8849B76 /* Pods-数据库大作业.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D2F79E720A9AD910086768D /* 数据库大作业 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2F7A1020A9AD930086768D /* Build configuration list for PBXNativeTarget "数据库大作业" */;
+			buildPhases = (
+				F0C290B53F98BFD86DD2279D /* [CP] Check Pods Manifest.lock */,
+				3D2F79E420A9AD910086768D /* Sources */,
+				3D2F79E520A9AD910086768D /* Frameworks */,
+				3D2F79E620A9AD910086768D /* Resources */,
+				2FDE5DC9142C271A37E7E0A3 /* [CP] Embed Pods Frameworks */,
+				D81CF8CC5A07CAEC7BD9DF78 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "数据库大作业";
+			productName = "数据库大作业";
+			productReference = 3D2F79E820A9AD910086768D /* 数据库大作业.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D2F79FB20A9AD930086768D /* 数据库大作业Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2F7A1320A9AD930086768D /* Build configuration list for PBXNativeTarget "数据库大作业Tests" */;
+			buildPhases = (
+				3D2F79F820A9AD930086768D /* Sources */,
+				3D2F79F920A9AD930086768D /* Frameworks */,
+				3D2F79FA20A9AD930086768D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2F79FE20A9AD930086768D /* PBXTargetDependency */,
+			);
+			name = "数据库大作业Tests";
+			productName = "数据库大作业Tests";
+			productReference = 3D2F79FC20A9AD930086768D /* 数据库大作业Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D2F7A0620A9AD930086768D /* 数据库大作业UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2F7A1620A9AD930086768D /* Build configuration list for PBXNativeTarget "数据库大作业UITests" */;
+			buildPhases = (
+				3D2F7A0320A9AD930086768D /* Sources */,
+				3D2F7A0420A9AD930086768D /* Frameworks */,
+				3D2F7A0520A9AD930086768D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2F7A0920A9AD930086768D /* PBXTargetDependency */,
+			);
+			name = "数据库大作业UITests";
+			productName = "数据库大作业UITests";
+			productReference = 3D2F7A0720A9AD930086768D /* 数据库大作业UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D2F79E020A9AD910086768D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = William;
+				TargetAttributes = {
+					3D2F79E720A9AD910086768D = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					3D2F79FB20A9AD930086768D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3D2F79E720A9AD910086768D;
+					};
+					3D2F7A0620A9AD930086768D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3D2F79E720A9AD910086768D;
+					};
+				};
+			};
+			buildConfigurationList = 3D2F79E320A9AD910086768D /* Build configuration list for PBXProject "数据库大作业" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D2F79DF20A9AD910086768D;
+			productRefGroup = 3D2F79E920A9AD910086768D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D2F79E720A9AD910086768D /* 数据库大作业 */,
+				3D2F79FB20A9AD930086768D /* 数据库大作业Tests */,
+				3D2F7A0620A9AD930086768D /* 数据库大作业UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D2F79E620A9AD910086768D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D92940720A9BECB00365514 /* LoginViewController.xib in Resources */,
+				3D2F79F620A9AD930086768D /* LaunchScreen.storyboard in Resources */,
+				3D92940320A9BE2E00365514 /* BasicViewController.xib in Resources */,
+				3D2F79F320A9AD930086768D /* Assets.xcassets in Resources */,
+				3D92940B20A9BF5500365514 /* RegistViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2F79FA20A9AD930086768D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2F7A0520A9AD930086768D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FDE5DC9142C271A37E7E0A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-数据库大作业/Pods-数据库大作业-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-数据库大作业/Pods-数据库大作业-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81CF8CC5A07CAEC7BD9DF78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-数据库大作业/Pods-数据库大作业-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0C290B53F98BFD86DD2279D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-数据库大作业-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D2F79E420A9AD910086768D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D92940620A9BECB00365514 /* LoginViewController.swift in Sources */,
+				3D92940220A9BE2E00365514 /* BasicViewController.swift in Sources */,
+				3D92940A20A9BF5500365514 /* RegistViewController.swift in Sources */,
+				3D92940E20A9D2EB00365514 /* User.swift in Sources */,
+				3D92941020A9D3B900365514 /* Attributes.swift in Sources */,
+				3D2F79EC20A9AD910086768D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2F79F820A9AD930086768D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2F7A0120A9AD930086768D /* ______Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2F7A0320A9AD930086768D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2F7A0C20A9AD930086768D /* ______UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D2F79FE20A9AD930086768D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2F79E720A9AD910086768D /* 数据库大作业 */;
+			targetProxy = 3D2F79FD20A9AD930086768D /* PBXContainerItemProxy */;
+		};
+		3D2F7A0920A9AD930086768D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2F79E720A9AD910086768D /* 数据库大作业 */;
+			targetProxy = 3D2F7A0820A9AD930086768D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D2F79F420A9AD930086768D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2F79F520A9AD930086768D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D2F7A0E20A9AD930086768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/数据库大作业/BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D2F7A0F20A9AD930086768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/数据库大作业/BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D2F7A1120A9AD930086768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9219E29A8F2AED955344DF /* Pods-数据库大作业.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "数据库大作业/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/数据库大作业/BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D2F7A1220A9AD930086768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98AFEAF850F5498F8849B76 /* Pods-数据库大作业.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "数据库大作业/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "William.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/数据库大作业/BridgingHeader.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D2F7A1420A9AD930086768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = "数据库大作业Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "William.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/数据库大作业.app/数据库大作业";
+			};
+			name = Debug;
+		};
+		3D2F7A1520A9AD930086768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = "数据库大作业Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "William.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/数据库大作业.app/数据库大作业";
+			};
+			name = Release;
+		};
+		3D2F7A1720A9AD930086768D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = "数据库大作业UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "William.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "数据库大作业";
+			};
+			name = Debug;
+		};
+		3D2F7A1820A9AD930086768D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66P5YQE4X8;
+				INFOPLIST_FILE = "数据库大作业UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "William.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "数据库大作业";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D2F79E320A9AD910086768D /* Build configuration list for PBXProject "数据库大作业" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2F7A0E20A9AD930086768D /* Debug */,
+				3D2F7A0F20A9AD930086768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2F7A1020A9AD930086768D /* Build configuration list for PBXNativeTarget "数据库大作业" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2F7A1120A9AD930086768D /* Debug */,
+				3D2F7A1220A9AD930086768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2F7A1320A9AD930086768D /* Build configuration list for PBXNativeTarget "数据库大作业Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2F7A1420A9AD930086768D /* Debug */,
+				3D2F7A1520A9AD930086768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2F7A1620A9AD930086768D /* Build configuration list for PBXNativeTarget "数据库大作业UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2F7A1720A9AD930086768D /* Debug */,
+				3D2F7A1820A9AD930086768D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D2F79E020A9AD910086768D /* Project object */;
+}
