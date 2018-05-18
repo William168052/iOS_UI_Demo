@@ -12,6 +12,9 @@
 		3D2F79F620A9AD930086768D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2F79F420A9AD930086768D /* LaunchScreen.storyboard */; };
 		3D2F7A0120A9AD930086768D /* ______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F7A0020A9AD930086768D /* ______Tests.swift */; };
 		3D2F7A0C20A9AD930086768D /* ______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F7A0B20A9AD930086768D /* ______UITests.swift */; };
+		3D52C7E420AAA555005367FB /* ZWTSQLiteTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52C7E320AAA555005367FB /* ZWTSQLiteTool.swift */; };
+		3D52C7EB20AB02CC005367FB /* BasicUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52C7E920AB02CC005367FB /* BasicUserViewController.swift */; };
+		3D52C7EC20AB02CC005367FB /* BasicUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D52C7EA20AB02CC005367FB /* BasicUserViewController.xib */; };
 		3D92940220A9BE2E00365514 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940020A9BE2E00365514 /* BasicViewController.swift */; };
 		3D92940320A9BE2E00365514 /* BasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D92940120A9BE2E00365514 /* BasicViewController.xib */; };
 		3D92940620A9BECB00365514 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940420A9BECB00365514 /* LoginViewController.swift */; };
@@ -20,6 +23,19 @@
 		3D92940B20A9BF5500365514 /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D92940920A9BF5500365514 /* RegistViewController.xib */; };
 		3D92940E20A9D2EB00365514 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940D20A9D2EB00365514 /* User.swift */; };
 		3D92941020A9D3B900365514 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940F20A9D3B900365514 /* Attributes.swift */; };
+		3D93A5DB20AD780E00B90009 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93A5D920AD780E00B90009 /* BookTableViewCell.swift */; };
+		3D93A5DC20AD780E00B90009 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D93A5DA20AD780E00B90009 /* BookTableViewCell.xib */; };
+		3DC80A5F20AC097C00325CB0 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC80A5E20AC097C00325CB0 /* SettingTableViewCell.xib */; };
+		3DC80A6120AC098800325CB0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A6020AC098800325CB0 /* SettingTableViewCell.swift */; };
+		3DC80A6E20AC116700325CB0 /* BorrowBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A6C20AC116700325CB0 /* BorrowBookViewController.swift */; };
+		3DC80A6F20AC116700325CB0 /* BorrowBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC80A6D20AC116700325CB0 /* BorrowBookViewController.xib */; };
+		3DC80A7220AC11CC00325CB0 /* ReturnBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A7020AC11CC00325CB0 /* ReturnBookViewController.swift */; };
+		3DC80A7320AC11CC00325CB0 /* ReturnBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC80A7120AC11CC00325CB0 /* ReturnBookViewController.xib */; };
+		3DC80A7620AC120500325CB0 /* QueryBorrowInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A7420AC120500325CB0 /* QueryBorrowInfoVC.swift */; };
+		3DC80A7720AC120500325CB0 /* QueryBorrowInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC80A7520AC120500325CB0 /* QueryBorrowInfoVC.xib */; };
+		3DC80A7920AC19F200325CB0 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A7820AC19F100325CB0 /* Book.swift */; };
+		3DC80A7C20AD645500325CB0 /* ManageBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A7A20AD645500325CB0 /* ManageBooksViewController.swift */; };
+		3DC80A7D20AD645500325CB0 /* ManageBooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC80A7B20AD645500325CB0 /* ManageBooksViewController.xib */; };
 		A2CA439830B75AAB7315B613 /* Pods_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE367E9BA92D56EA35ABEC3 /* Pods_______.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +68,9 @@
 		3D2F7A0720A9AD930086768D /* 数据库大作业UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据库大作业UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2F7A0B20A9AD930086768D /* ______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______UITests.swift"; sourceTree = "<group>"; };
 		3D2F7A0D20A9AD930086768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D52C7E320AAA555005367FB /* ZWTSQLiteTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWTSQLiteTool.swift; sourceTree = "<group>"; };
+		3D52C7E920AB02CC005367FB /* BasicUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUserViewController.swift; sourceTree = "<group>"; };
+		3D52C7EA20AB02CC005367FB /* BasicUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicUserViewController.xib; sourceTree = "<group>"; };
 		3D92940020A9BE2E00365514 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		3D92940120A9BE2E00365514 /* BasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicViewController.xib; sourceTree = "<group>"; };
 		3D92940420A9BECB00365514 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +79,19 @@
 		3D92940920A9BF5500365514 /* RegistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
 		3D92940D20A9D2EB00365514 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3D92940F20A9D3B900365514 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
+		3D93A5D920AD780E00B90009 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		3D93A5DA20AD780E00B90009 /* BookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		3DC80A5E20AC097C00325CB0 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		3DC80A6020AC098800325CB0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		3DC80A6C20AC116700325CB0 /* BorrowBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowBookViewController.swift; sourceTree = "<group>"; };
+		3DC80A6D20AC116700325CB0 /* BorrowBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BorrowBookViewController.xib; sourceTree = "<group>"; };
+		3DC80A7020AC11CC00325CB0 /* ReturnBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnBookViewController.swift; sourceTree = "<group>"; };
+		3DC80A7120AC11CC00325CB0 /* ReturnBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReturnBookViewController.xib; sourceTree = "<group>"; };
+		3DC80A7420AC120500325CB0 /* QueryBorrowInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBorrowInfoVC.swift; sourceTree = "<group>"; };
+		3DC80A7520AC120500325CB0 /* QueryBorrowInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueryBorrowInfoVC.xib; sourceTree = "<group>"; };
+		3DC80A7820AC19F100325CB0 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3DC80A7A20AD645500325CB0 /* ManageBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageBooksViewController.swift; sourceTree = "<group>"; };
+		3DC80A7B20AD645500325CB0 /* ManageBooksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageBooksViewController.xib; sourceTree = "<group>"; };
 		3DE2C0D920A9EC77003DE4AE /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		8DE367E9BA92D56EA35ABEC3 /* Pods_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98AFEAF850F5498F8849B76 /* Pods-数据库大作业.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-数据库大作业.release.xcconfig"; path = "Pods/Target Support Files/Pods-数据库大作业/Pods-数据库大作业.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,14 +158,16 @@
 			isa = PBXGroup;
 			children = (
 				3D2F79EB20A9AD910086768D /* AppDelegate.swift */,
-				3D92940420A9BECB00365514 /* LoginViewController.swift */,
-				3D92940020A9BE2E00365514 /* BasicViewController.swift */,
-				3D92940820A9BF5500365514 /* RegistViewController.swift */,
 				3D92940D20A9D2EB00365514 /* User.swift */,
+				3D52C7E320AAA555005367FB /* ZWTSQLiteTool.swift */,
 				3D92940F20A9D3B900365514 /* Attributes.swift */,
+				3DC80A6020AC098800325CB0 /* SettingTableViewCell.swift */,
+				3D93A5D920AD780E00B90009 /* BookTableViewCell.swift */,
+				3D92940C20A9BF6100365514 /* XIB */,
+				3DC80A7820AC19F100325CB0 /* Book.swift */,
 				3D2F79F220A9AD930086768D /* Assets.xcassets */,
 				3DE2C0D920A9EC77003DE4AE /* BridgingHeader.h */,
-				3D92940C20A9BF6100365514 /* XIB */,
+				3DC80A6920AC110200325CB0 /* 界面 */,
 				3D2F79F420A9AD930086768D /* LaunchScreen.storyboard */,
 				3D2F79F720A9AD930086768D /* Info.plist */,
 			);
@@ -161,11 +195,73 @@
 		3D92940C20A9BF6100365514 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				3DC80A5E20AC097C00325CB0 /* SettingTableViewCell.xib */,
+				3D93A5DA20AD780E00B90009 /* BookTableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		3DC80A6220AC106C00325CB0 /* 用户界面 */ = {
+			isa = PBXGroup;
+			children = (
+				3DC80A6620AC10AD00325CB0 /* 管理员界面 */,
+				3DC80A6320AC107700325CB0 /* 普通用户界面 */,
+			);
+			path = "用户界面";
+			sourceTree = "<group>";
+		};
+		3DC80A6320AC107700325CB0 /* 普通用户界面 */ = {
+			isa = PBXGroup;
+			children = (
+				3D52C7E920AB02CC005367FB /* BasicUserViewController.swift */,
+				3D52C7EA20AB02CC005367FB /* BasicUserViewController.xib */,
+			);
+			path = "普通用户界面";
+			sourceTree = "<group>";
+		};
+		3DC80A6620AC10AD00325CB0 /* 管理员界面 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "管理员界面";
+			sourceTree = "<group>";
+		};
+		3DC80A6920AC110200325CB0 /* 界面 */ = {
+			isa = PBXGroup;
+			children = (
+				3DC80A6B20AC111B00325CB0 /* 功能界面 */,
+				3DC80A6A20AC110D00325CB0 /* 登录注册界面 */,
+				3DC80A6220AC106C00325CB0 /* 用户界面 */,
+			);
+			path = "界面";
+			sourceTree = "<group>";
+		};
+		3DC80A6A20AC110D00325CB0 /* 登录注册界面 */ = {
+			isa = PBXGroup;
+			children = (
+				3D92940420A9BECB00365514 /* LoginViewController.swift */,
+				3D92940020A9BE2E00365514 /* BasicViewController.swift */,
+				3D92940820A9BF5500365514 /* RegistViewController.swift */,
 				3D92940520A9BECB00365514 /* LoginViewController.xib */,
 				3D92940120A9BE2E00365514 /* BasicViewController.xib */,
 				3D92940920A9BF5500365514 /* RegistViewController.xib */,
 			);
-			path = XIB;
+			path = "登录注册界面";
+			sourceTree = "<group>";
+		};
+		3DC80A6B20AC111B00325CB0 /* 功能界面 */ = {
+			isa = PBXGroup;
+			children = (
+				3DC80A6C20AC116700325CB0 /* BorrowBookViewController.swift */,
+				3DC80A7A20AD645500325CB0 /* ManageBooksViewController.swift */,
+				3DC80A7020AC11CC00325CB0 /* ReturnBookViewController.swift */,
+				3DC80A7420AC120500325CB0 /* QueryBorrowInfoVC.swift */,
+				3DC80A7B20AD645500325CB0 /* ManageBooksViewController.xib */,
+				3DC80A6D20AC116700325CB0 /* BorrowBookViewController.xib */,
+				3DC80A7520AC120500325CB0 /* QueryBorrowInfoVC.xib */,
+				3DC80A7120AC11CC00325CB0 /* ReturnBookViewController.xib */,
+			);
+			path = "功能界面";
 			sourceTree = "<group>";
 		};
 		5C900F6EDBCDB2E58E8EC7F5 /* Pods */ = {
@@ -287,8 +383,15 @@
 			files = (
 				3D92940720A9BECB00365514 /* LoginViewController.xib in Resources */,
 				3D2F79F620A9AD930086768D /* LaunchScreen.storyboard in Resources */,
+				3DC80A7720AC120500325CB0 /* QueryBorrowInfoVC.xib in Resources */,
+				3DC80A7320AC11CC00325CB0 /* ReturnBookViewController.xib in Resources */,
+				3DC80A7D20AD645500325CB0 /* ManageBooksViewController.xib in Resources */,
+				3DC80A6F20AC116700325CB0 /* BorrowBookViewController.xib in Resources */,
+				3D52C7EC20AB02CC005367FB /* BasicUserViewController.xib in Resources */,
 				3D92940320A9BE2E00365514 /* BasicViewController.xib in Resources */,
+				3D93A5DC20AD780E00B90009 /* BookTableViewCell.xib in Resources */,
 				3D2F79F320A9AD930086768D /* Assets.xcassets in Resources */,
+				3DC80A5F20AC097C00325CB0 /* SettingTableViewCell.xib in Resources */,
 				3D92940B20A9BF5500365514 /* RegistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,12 +471,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D52C7EB20AB02CC005367FB /* BasicUserViewController.swift in Sources */,
 				3D92940620A9BECB00365514 /* LoginViewController.swift in Sources */,
+				3DC80A7920AC19F200325CB0 /* Book.swift in Sources */,
+				3D52C7E420AAA555005367FB /* ZWTSQLiteTool.swift in Sources */,
+				3DC80A7220AC11CC00325CB0 /* ReturnBookViewController.swift in Sources */,
 				3D92940220A9BE2E00365514 /* BasicViewController.swift in Sources */,
 				3D92940A20A9BF5500365514 /* RegistViewController.swift in Sources */,
+				3DC80A7620AC120500325CB0 /* QueryBorrowInfoVC.swift in Sources */,
 				3D92940E20A9D2EB00365514 /* User.swift in Sources */,
+				3DC80A6120AC098800325CB0 /* SettingTableViewCell.swift in Sources */,
 				3D92941020A9D3B900365514 /* Attributes.swift in Sources */,
 				3D2F79EC20A9AD910086768D /* AppDelegate.swift in Sources */,
+				3DC80A7C20AD645500325CB0 /* ManageBooksViewController.swift in Sources */,
+				3D93A5DB20AD780E00B90009 /* BookTableViewCell.swift in Sources */,
+				3DC80A6E20AC116700325CB0 /* BorrowBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +658,7 @@
 				DEVELOPMENT_TEAM = 66P5YQE4X8;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "数据库大作业/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,6 +683,7 @@
 				DEVELOPMENT_TEAM = 66P5YQE4X8;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "数据库大作业/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

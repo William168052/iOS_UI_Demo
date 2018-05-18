@@ -12,6 +12,7 @@ class BasicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //创建数据库
 
         // Do any additional setup after loading the view.
     }

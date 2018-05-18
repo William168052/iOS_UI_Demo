@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="BookTableViewCell" customModule="数据库大作业" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="151.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyf-3O-Paj">
+                        <rect key="frame" x="118.5" y="81" width="233.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" red="0.37544672849999999" green="0.3791640228" blue="0.3791640228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytC-Ol-m4m">
+                        <rect key="frame" x="118.5" y="111" width="233.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" red="0.37544672849999999" green="0.3791640228" blue="0.3791640228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-NO-RkP">
+                        <rect key="frame" x="362" y="43" width="85" height="28"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="借书"/>
+                        <connections>
+                            <action selector="borrowBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S1X-Wh-Sn0"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余X本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYX-NT-Wnu">
+                        <rect key="frame" x="362" y="87" width="85" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKs-o0-Ebn">
+                        <rect key="frame" x="20" y="11" width="93.5" height="130"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.92289978269999995" green="0.26345484619999998" blue="0.1464276135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-Hi-Thk">
+                        <rect key="frame" x="118.5" y="11" width="233.5" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j2k-Hi-Thk" firstAttribute="leading" secondItem="PKs-o0-Ebn" secondAttribute="trailing" constant="5" id="1ae-CK-C2o"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ytC-Ol-m4m" secondAttribute="bottom" id="4nI-SX-1Cr"/>
+                    <constraint firstItem="ytC-Ol-m4m" firstAttribute="height" secondItem="Oyf-3O-Paj" secondAttribute="height" id="C67-TJ-CUN"/>
+                    <constraint firstItem="Oyf-3O-Paj" firstAttribute="top" secondItem="j2k-Hi-Thk" secondAttribute="bottom" constant="10" id="Ca0-RV-JFC"/>
+                    <constraint firstItem="Oyf-3O-Paj" firstAttribute="height" secondItem="j2k-Hi-Thk" secondAttribute="height" multiplier="1:2" id="D3T-Fc-7bc"/>
+                    <constraint firstItem="PKs-o0-Ebn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ddm-79-6au"/>
+                    <constraint firstItem="Oyf-3O-Paj" firstAttribute="leading" secondItem="j2k-Hi-Thk" secondAttribute="leading" id="Dlc-Jb-Ac4"/>
+                    <constraint firstItem="PKs-o0-Ebn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Kas-h1-F48"/>
+                    <constraint firstItem="PKs-o0-Ebn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LaV-ws-zQK"/>
+                    <constraint firstItem="wYX-NT-Wnu" firstAttribute="centerX" secondItem="ycT-NO-RkP" secondAttribute="centerX" id="Q12-Md-SXO"/>
+                    <constraint firstItem="PKs-o0-Ebn" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:5" id="Vge-mf-8KT"/>
+                    <constraint firstItem="j2k-Hi-Thk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:2" id="Y1A-Nl-j7C"/>
+                    <constraint firstItem="ytC-Ol-m4m" firstAttribute="top" secondItem="Oyf-3O-Paj" secondAttribute="bottom" id="Ye1-P7-eZI"/>
+                    <constraint firstItem="Oyf-3O-Paj" firstAttribute="width" secondItem="j2k-Hi-Thk" secondAttribute="width" id="d2Y-vY-cra"/>
+                    <constraint firstItem="wYX-NT-Wnu" firstAttribute="width" secondItem="ycT-NO-RkP" secondAttribute="width" id="d4g-mx-zMm"/>
+                    <constraint firstItem="ycT-NO-RkP" firstAttribute="leading" secondItem="j2k-Hi-Thk" secondAttribute="trailing" constant="10" id="g0l-5a-0dK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ycT-NO-RkP" secondAttribute="trailing" id="gde-sn-k3F"/>
+                    <constraint firstItem="ytC-Ol-m4m" firstAttribute="width" secondItem="j2k-Hi-Thk" secondAttribute="width" id="jUX-QS-Tgx"/>
+                    <constraint firstItem="j2k-Hi-Thk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kjB-Y0-eb9"/>
+                    <constraint firstItem="wYX-NT-Wnu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="5:4" id="lek-Vs-Zrz"/>
+                    <constraint firstItem="ytC-Ol-m4m" firstAttribute="leading" secondItem="j2k-Hi-Thk" secondAttribute="leading" id="lm4-6d-6w1"/>
+                    <constraint firstItem="ycT-NO-RkP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="3:4" id="rYt-Fn-iVw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PKs-o0-Ebn" secondAttribute="bottom" id="rpf-ZS-nUF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="IDLabel" destination="PKs-o0-Ebn" id="sLm-UV-Mww"/>
+                <outlet property="NameLabel" destination="j2k-Hi-Thk" id="5xb-dm-QPh"/>
+                <outlet property="authorLabel" destination="Oyf-3O-Paj" id="ykE-LT-MCL"/>
+                <outlet property="borrowBtn" destination="ycT-NO-RkP" id="TRZ-MF-JYB"/>
+                <outlet property="publicLabel" destination="ytC-Ol-m4m" id="cX2-sd-cMc"/>
+                <outlet property="residueBook" destination="wYX-NT-Wnu" id="Xbm-rB-YPz"/>
+            </connections>
+            <point key="canvasLocation" x="107.5" y="74"/>
+        </tableViewCell>
+    </objects>
+</document>

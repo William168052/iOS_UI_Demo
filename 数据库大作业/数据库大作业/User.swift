@@ -11,9 +11,9 @@ import UIKit
 class User: NSObject {
     var userName : String?
     var passWord : String?
-    var identifier : UserIdentifier?
+    var identifier : String?
     
-    init(userName:String,passWord:String,identifier:UserIdentifier) {
+    init(userName:String,passWord:String,identifier:String) {
         self.userName = userName
         self.passWord = passWord
         self.identifier = identifier

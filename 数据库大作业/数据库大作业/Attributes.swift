@@ -13,3 +13,22 @@ enum UserIdentifier : String {
     case administrator = "administrator"
 }
 
+//弹框提示
+extension UIView{
+    static func alertMessage(title:String,message:String,preferredStyle:UIAlertControllerStyle,target:UIViewController,compelete:(()->Void)?) {
+        let alertVC = UIAlertController.init(title: title, message: message, preferredStyle:preferredStyle)
+        
+        alertVC.addAction(UIAlertAction.init(title: "确定", style: .default, handler: nil))
+        
+        target.present(alertVC, animated: true){
+            if compelete != nil {
+                compelete!()
+            }
+        }
+        
+    }
+
+}
+
+
+
