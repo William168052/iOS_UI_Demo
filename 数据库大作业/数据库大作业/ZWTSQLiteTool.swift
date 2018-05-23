@@ -56,6 +56,18 @@ class ZWTSQLiteTool: NSObject {
         return self.updateTable(sql:sql,arguments:arguments)
     }
     
+    // MARK:创建触发器
+    func createTrigger(sql:String) -> Bool {
+        //打开数据库
+        if !(self.dataBase?.open())! {
+            print("数据库打开失败")
+            return false
+        }
+        let flag = self.dataBase?.executeUpdate(sql, withArgumentsIn: [])
+        self.dataBase?.close()
+        return flag!
+    }
+    
     
     
 }

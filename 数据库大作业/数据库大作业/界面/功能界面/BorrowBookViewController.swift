@@ -14,7 +14,7 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    lazy var booksArray : [Book]? = Array<Book>.init()
+    var booksArray : [Book]?
     
     let dataBaseTool = ZWTSQLiteTool.shareInstance
     
@@ -35,6 +35,7 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
     
 
     func queryBooksFromDataBase() {
+        self.booksArray = Array<Book>.init()
         if !((self.dataBaseTool.dataBase?.open())!) {
             print("数据库打开失败")
         }
@@ -95,12 +96,17 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
             if dataBaseTool.updateTable(sql: "update Borrow_Table set borrowNumber = ? where UserName = ? and BookID = ?", arguments: [(borrowNumber!+1),userName,bookID]) == false {
                 print("更新已有记录失败")
             }
+            
         }else{
             //将借书信息添加到表中
             if dataBaseTool.updateTable(sql: "insert into Borrow_Table values (?,?,?)", arguments: [userName,bookID,1]) == false {
                 print("借书失败")
             }
         }
+        
+        //更新数据源并刷新表格
+        self.queryBooksFromDataBase()
+        tableView.reloadData()
         
         
     }

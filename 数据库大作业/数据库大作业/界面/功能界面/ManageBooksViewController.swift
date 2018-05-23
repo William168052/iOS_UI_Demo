@@ -15,7 +15,7 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
     
     var dataBaseTool = ZWTSQLiteTool.shareInstance
     
-    lazy var bookArray : [Book]? = Array<Book>.init()
+    var bookArray : [Book]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,7 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
 
     
     func queryBooksFromDataBase() {
+        self.bookArray = Array<Book>.init()
         if !((self.dataBaseTool.dataBase?.open())!) {
             print("数据库打开失败")
         }
@@ -128,6 +129,30 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
         cell?.borrowBtn.isHidden = true
         return cell!
         
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let action_1 = UITableViewRowAction.init(style: .destructive, title: "删除") { (rowAction, indexPath) in
+            //弹框确认
+            let alert = UIAlertController.init(title: "确认删除此书籍吗", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction.init(title: "确认", style: .destructive, handler: { (action) in
+                //从借阅记录中删除
+                let cell = tableView.cellForRow(at: indexPath) as! BookTableViewCell
+                let ID = cell.IDLabel.text
+                if self.dataBaseTool.deleteFromTable(sql: "delete from Book_Table where BookID = ?", arguments: [ID!]) == false {
+                    print("删除书籍失败")
+                    
+                }else{
+                    
+                    //刷新表格以及数据源
+                    self.queryBooksFromDataBase()
+                    tableView.deleteRows(at: [indexPath], with: .left)
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        return [action_1]
     }
 
     

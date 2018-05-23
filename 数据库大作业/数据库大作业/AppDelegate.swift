@@ -36,6 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if dataBaseTool.createTable(sql: "create table if not exists Borrow_Table(UserName text not null,BookID text not null,borrowNumber integer not null,primary key(UserName,BookID),foreign key (UserName) references User_Table(UserName),foreign key (BookID) references Book_Table(BookID))") == false {
             print("新建借书表失败")
         }
+        //触发器
+        //删除书籍的同时删除它的借阅记录
+        if dataBaseTool.createTable(sql: "create trigger if not exists delete_Book after delete on Book_Table begin delete from Borrow_Table where BookID = old.BookID; end") == false {
+            print("新建删除书籍触发器失败")
+        }
+        //当借出一本书之后图书表中此书的本数将减一
+        if dataBaseTool.createTable(sql: "create trigger if not exists borrow_Book after update of borrowNumber on Borrow_Table begin update Book_Table set BookNumber = BookNumber - 1 where BookID = new.BookID; end") == false {
+            print("新建借书触发器失败")
+        }
         
         return true
     }

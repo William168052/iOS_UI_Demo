@@ -100,12 +100,6 @@ class LoginViewController: UIViewController {
                     
                     self.present(alertVC, animated: true, completion: nil)
                 }
-            }else{
-//                //没有表新建一张表
-//                let flag = self.dataBaseTool.createTable(sql: "create table if not exists User_Table(UserName text primary key not null,passWord text not null,identifier text not null)")
-//                if flag == false {
-//                    print("建表失败")
-//                }
             }
         }
     }
