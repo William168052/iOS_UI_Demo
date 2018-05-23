@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,BookTableViewCellDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -65,6 +65,7 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
         if cell == nil {
             cell = BookTableViewCell.tableViewCell(tableView: tableView, identifier: identifier)
         }
+        cell?.delegate = self
         let book : Book? = self.booksArray?[indexPath.row]
         cell?.IDLabel.text = book?.bookID
         cell?.NameLabel.text = book?.bookName
@@ -72,6 +73,36 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
         cell?.publicLabel.text = book?.bookPublic
         cell?.residueBook.text = String.init(format: "剩余%d本", (book?.bookNumber)!)
         return cell!
+    }
+    
+    func bookTableViewCell(didClickBorrowButton cell: BookTableViewCell) {
+        //拿到借书的信息
+        let userName = User.shareInstance?.userName as Any
+        let bookID = cell.IDLabel.text as Any
+        
+        //先去数据库中找是否有相同的记录  如果有只需将借书数+1即可
+        if dataBaseTool.dataBase?.open() == false {
+            print("打开数据库失败")
+        }
+        
+        let result = dataBaseTool.dataBase?.executeQuery("select * from Borrow_Table where UserName = ? and BookID = ?", withArgumentsIn: [userName,bookID])
+        
+        //判断是否有结果
+        if result?.next() != false {
+            //有记录
+            let borrowNumber = result?.int(forColumn: "borrowNumber")
+            
+            if dataBaseTool.updateTable(sql: "update Borrow_Table set borrowNumber = ? where UserName = ? and BookID = ?", arguments: [(borrowNumber!+1),userName,bookID]) == false {
+                print("更新已有记录失败")
+            }
+        }else{
+            //将借书信息添加到表中
+            if dataBaseTool.updateTable(sql: "insert into Borrow_Table values (?,?,?)", arguments: [userName,bookID,1]) == false {
+                print("借书失败")
+            }
+        }
+        
+        
     }
 
 }

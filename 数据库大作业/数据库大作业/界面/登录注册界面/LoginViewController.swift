@@ -75,11 +75,15 @@ class LoginViewController: UIViewController {
                     self.dataBaseTool.dataBase?.close()
                     // MARK:登录成功
                     if user?.identifier == UserIdentifier.normalUser.rawValue {
+                        //创建普通用户单例
+                        User.login(userName: userName.text!, passWord: userPwd.text!, identifier: UserIdentifier.normalUser.rawValue)
                         //登录普通用户界面
                         let vc = BasicUserViewController.init()
                         vc.identifier = UserIdentifier.normalUser
                         self.navigationController?.pushViewController(vc, animated: true)
                     }else{
+                        //创建管理员单例
+                        User.login(userName: userName.text!, passWord: userPwd.text!, identifier: UserIdentifier.normalUser.rawValue)
                         //登录管理员界面
                         let vc = BasicUserViewController.init()
                         vc.identifier = UserIdentifier.administrator

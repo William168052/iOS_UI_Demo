@@ -24,13 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //在后台创建表
         let dataBaseTool = ZWTSQLiteTool.shareInstance
         //没有表新建一张表
-        
+        //用户表
         if dataBaseTool.createTable(sql: "create table if not exists User_Table(UserName text primary key not null,passWord text not null,identifier text not null)") == false {
             print("新建用户表失败")
         }
-        
+        //图书表
         if dataBaseTool.createTable(sql: "create table if not exists Book_Table(BookID text primary key not null,BookName text not null,BookNumber integer not null,BookAuthor text not null,BookPublic text not null)") == false {
             print("新建图书表失败")
+        }
+        //借书表
+        if dataBaseTool.createTable(sql: "create table if not exists Borrow_Table(UserName text not null,BookID text not null,borrowNumber integer not null,primary key(UserName,BookID),foreign key (UserName) references User_Table(UserName),foreign key (BookID) references Book_Table(BookID))") == false {
+            print("新建借书表失败")
         }
         
         return true
