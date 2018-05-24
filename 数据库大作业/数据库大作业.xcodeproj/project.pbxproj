@@ -25,6 +25,8 @@
 		3D92941020A9D3B900365514 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D92940F20A9D3B900365514 /* Attributes.swift */; };
 		3D93A5DB20AD780E00B90009 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93A5D920AD780E00B90009 /* BookTableViewCell.swift */; };
 		3D93A5DC20AD780E00B90009 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D93A5DA20AD780E00B90009 /* BookTableViewCell.xib */; };
+		3D9D8F7720B6972E003D5DAB /* UserManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D8F7520B6972E003D5DAB /* UserManageViewController.swift */; };
+		3D9D8F7820B6972E003D5DAB /* UserManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D8F7620B6972E003D5DAB /* UserManageViewController.xib */; };
 		3DC80A5F20AC097C00325CB0 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC80A5E20AC097C00325CB0 /* SettingTableViewCell.xib */; };
 		3DC80A6120AC098800325CB0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A6020AC098800325CB0 /* SettingTableViewCell.swift */; };
 		3DC80A6E20AC116700325CB0 /* BorrowBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC80A6C20AC116700325CB0 /* BorrowBookViewController.swift */; };
@@ -81,6 +83,8 @@
 		3D92940F20A9D3B900365514 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
 		3D93A5D920AD780E00B90009 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		3D93A5DA20AD780E00B90009 /* BookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		3D9D8F7520B6972E003D5DAB /* UserManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManageViewController.swift; sourceTree = "<group>"; };
+		3D9D8F7620B6972E003D5DAB /* UserManageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserManageViewController.xib; sourceTree = "<group>"; };
 		3DC80A5E20AC097C00325CB0 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		3DC80A6020AC098800325CB0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		3DC80A6C20AC116700325CB0 /* BorrowBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowBookViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 				3DC80A7A20AD645500325CB0 /* ManageBooksViewController.swift */,
 				3DC80A7020AC11CC00325CB0 /* ReturnBookViewController.swift */,
 				3DC80A7420AC120500325CB0 /* QueryBorrowInfoVC.swift */,
+				3D9D8F7520B6972E003D5DAB /* UserManageViewController.swift */,
+				3D9D8F7620B6972E003D5DAB /* UserManageViewController.xib */,
 				3DC80A7B20AD645500325CB0 /* ManageBooksViewController.xib */,
 				3DC80A6D20AC116700325CB0 /* BorrowBookViewController.xib */,
 				3DC80A7520AC120500325CB0 /* QueryBorrowInfoVC.xib */,
@@ -392,6 +398,7 @@
 				3D93A5DC20AD780E00B90009 /* BookTableViewCell.xib in Resources */,
 				3D2F79F320A9AD930086768D /* Assets.xcassets in Resources */,
 				3DC80A5F20AC097C00325CB0 /* SettingTableViewCell.xib in Resources */,
+				3D9D8F7820B6972E003D5DAB /* UserManageViewController.xib in Resources */,
 				3D92940B20A9BF5500365514 /* RegistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9D8F7720B6972E003D5DAB /* UserManageViewController.swift in Sources */,
 				3D52C7EB20AB02CC005367FB /* BasicUserViewController.swift in Sources */,
 				3D92940620A9BECB00365514 /* LoginViewController.swift in Sources */,
 				3DC80A7920AC19F200325CB0 /* Book.swift in Sources */,

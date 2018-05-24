@@ -25,8 +25,8 @@ class BasicUserViewController: UIViewController,UITableViewDelegate,UITableViewD
                                   ["itemName":"借阅记录","icon":"borrowInfo"]
             ]
         }else if self.identifier == UserIdentifier.administrator {
-            self.userAuthority = [["itemName":"图书管理","icon":"borrowBook"],
-                                  ["itemName":"用户管理","icon":"returnBook"],
+            self.userAuthority = [["itemName":"图书管理","icon":"book_Manage"],
+                                  ["itemName":"用户管理","icon":"user_Manage"],
                                   ["itemName":"借阅记录","icon":"borrowInfo"]
             ]
         }
@@ -107,6 +107,7 @@ class BasicUserViewController: UIViewController,UITableViewDelegate,UITableViewD
             targetVC = ManageBooksViewController.init()
             break
         case "用户管理":
+            targetVC = UserManageViewController.init()
             break
         case "借阅记录":
             break
