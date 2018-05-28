@@ -42,9 +42,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("新建删除书籍触发器失败")
         }
         //当借出一本书之后图书表中此书的本数将减一
-        if dataBaseTool.createTable(sql: "create trigger if not exists borrow_Book after update of borrowNumber on Borrow_Table begin update Book_Table set BookNumber = BookNumber - 1 where BookID = new.BookID; end") == false {
-            print("新建借书触发器失败")
+        if dataBaseTool.createTable(sql: "create trigger if not exists borrow_Book_update after update of borrowNumber on Borrow_Table begin update Book_Table set BookNumber = BookNumber - 1 where BookID = new.BookID; end") == false {
+            print("新建借书(监听update)触发器失败")
         }
+        if dataBaseTool.createTable(sql: "create trigger if not exists borrow_Book_insert after insert on Borrow_Table begin update Book_Table set BookNumber = BookNumber - 1 where BookID = new.BookID; end") == false {
+            print("新建借书(监听insert)触发器失败")
+        }
+        
+        //删除用户的同时删除他的借阅记录
+        if dataBaseTool.createTable(sql: "create trigger if not exists delete_User after delete on User_Table begin delete from Borrow_Table where UserName = old.UserName; end") == false {
+            print("新建删除用户触发器失败")
+        }
+        
+        
         
         return true
     }

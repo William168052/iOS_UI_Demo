@@ -84,6 +84,7 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
         //先去数据库中找是否有相同的记录  如果有只需将借书数+1即可
         if dataBaseTool.dataBase?.open() == false {
             print("打开数据库失败")
+            return
         }
         
         let result = dataBaseTool.dataBase?.executeQuery("select * from Borrow_Table where UserName = ? and BookID = ?", withArgumentsIn: [userName,bookID])
@@ -103,6 +104,8 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
                 print("借书失败")
             }
         }
+        
+        dataBaseTool.dataBase?.close()
         
         //更新数据源并刷新表格
         self.queryBooksFromDataBase()
