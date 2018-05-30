@@ -13,6 +13,9 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    var currentEditTextFieldOldValue : String?
+    var currentEditBook : Book?
+    
     var dataBaseTool = ZWTSQLiteTool.shareInstance
     
     var bookArray : [Book]?
@@ -132,6 +135,8 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        //记录当前修改的书的引用
+        self.currentEditBook = self.bookArray?[indexPath.row]
         let action_1 = UITableViewRowAction.init(style: .destructive, title: "删除") { (rowAction, indexPath) in
             //弹框确认
             let alert = UIAlertController.init(title: "确认删除此书籍吗", message: nil, preferredStyle: .alert)
@@ -155,6 +160,110 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
         }
         return [action_1]
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let book = self.bookArray![indexPath.row]
+        self.currentEditBook = book
+        
+        //弹出界面修改
+        let alertV = UIAlertController.init(title: "修改书籍", message: nil, preferredStyle: .alert)
+        
+        //添加输入框
+
+        for index in 0..<Book.properties.count {
+            alertV.addTextField { (textField) in
+                //添加Tag
+                textField.tag = index
+                //添加监听器
+//                textField.addTarget(self, action: #selector(self.endEditTextField(sender:)), for: .editingDidEnd)
+//                textField.addTarget(self, action: #selector(self.beginEditTextField(sender:)), for: .editingDidBegin)
+                //设置占位字符串
+                textField.placeholder = Book.properties[index]
+            }
+        }
+        //设置数据
+        let textF = alertV.textFields
+        if let textF = textF {
+            for index in 0..<textF.count {
+                let tf = textF[index]
+                tf.tag = index
+                switch tf.placeholder {
+                case "书籍编号":
+                    tf.text = book.bookID
+                case "书名":
+                    tf.text = book.bookName
+                case "书籍数量":
+                    tf.text = String.init(format: "%d", book.bookNumber!)
+                case "作者":
+                    tf.text = book.bookAuthor
+                case "出版社":
+                    tf.text = book.bookPublic
+                default :
+                    break
+                }
+            }
+        }
+        
+        
+        alertV.addAction(UIAlertAction.init(title: "确定", style: .default, handler: { (action) in
+            let textF = alertV.textFields
+            
+            if let textF = textF {
+                for index in 0..<textF.count {
+                    //定义列名
+                    var columnName : String?
+                    let curValue = textF[index].text
+                    switch Book.properties[index] {
+                    case "书籍编号":
+                        columnName = "BookID"
+                    case "书名":
+                        columnName = "BookName"
+                    case "书籍数量":
+                        columnName = "BookNumber"
+                    case "作者":
+                        columnName = "BookAuthor"
+                    case "出版社":
+                        columnName = "BookPublic"
+                    default :
+                        break
+                    }
+                    let flag : Bool?
+                    if columnName == "BookNumber" {
+                        let bookNum = (curValue! as NSString).intValue
+                        flag = self.dataBaseTool.updateTable(sql: "update Book_Table set \(columnName!) = ? where BookID = ?", arguments: [Int(bookNum),self.currentEditBook?.bookID as Any])
+                    }else{
+                        flag = self.dataBaseTool.updateTable(sql: "update Book_Table set \(columnName!) = ? where BookID = ?", arguments: [curValue as Any,self.currentEditBook?.bookID as Any])
+                    }
+                    
+                    
+                    if flag == false {
+                        UIView.alertMessage(title: "警告", message: "修改图书失败", preferredStyle: .alert, target: self, compelete: nil)
+                    }else{
+                        self.queryBooksFromDataBase()
+                        self.tableView.reloadData()
+                    }
+
+                }
+            }
+      
+        }))
+        alertV.addAction(UIAlertAction.init(title: "取消", style: .destructive, handler: nil))
+        self.present(alertV, animated: true)
+    }
+//
+//    @objc func beginEditTextField(sender:UITextField){
+//        self.currentEditTextFieldOldValue = sender.text
+//    }
+    
+    
+//    @objc func endEditTextField(sender:UITextField){
+//        if sender.text != self.currentEditTextFieldOldValue {
+//            //修改了数据就更新
+//        }
+//        
+//
+//    }
 
     
 
