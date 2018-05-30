@@ -54,6 +54,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("新建删除用户触发器失败")
         }
         
+        //还书监听器
+        if dataBaseTool.createTable(sql: "create trigger if not exists delete_BorrowInfo after delete on Borrow_Table begin update Book_Table set BookNumber = BookNumber + old.borrowNumber where BookID = old.BookID; end") == false {
+            print("新建删除用户触发器失败")
+        }
         
         
         return true

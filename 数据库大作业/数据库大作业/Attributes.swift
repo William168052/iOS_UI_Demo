@@ -20,6 +20,8 @@ extension UIView{
         
         alertVC.addAction(UIAlertAction.init(title: "确定", style: .default, handler: nil))
         
+        
+        
         target.present(alertVC, animated: true){
             if compelete != nil {
                 compelete!()

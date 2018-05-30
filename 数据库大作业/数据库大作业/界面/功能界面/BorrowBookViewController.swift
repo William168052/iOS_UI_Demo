@@ -101,7 +101,7 @@ class BorrowBookViewController: UIViewController,UITableViewDelegate,UITableView
         }else{
             //将借书信息添加到表中
             if dataBaseTool.updateTable(sql: "insert into Borrow_Table values (?,?,?)", arguments: [userName,bookID,1]) == false {
-                print("借书失败")
+                UIView.alertMessage(title: "注意", message: "借书失败", preferredStyle: .alert, target: self, compelete: nil)
             }
         }
         

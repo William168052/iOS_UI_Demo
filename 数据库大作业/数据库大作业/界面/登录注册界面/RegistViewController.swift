@@ -23,16 +23,17 @@ class RegistViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        //如果没有表新建一张表
-//        let flag = self.dataBaseTool.createTable(sql: "create table if not exists User_Table(UserName text primary key not null,passWord text not null,identifier text not null)")
-//        if flag == false {
-//            print("建表失败")
-//        }
+
         self.title = "注册"
         
-        // Do any additional setup after loading the view.
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: self, action: #selector(popVC))
+
     }
 
+    @objc func popVC() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

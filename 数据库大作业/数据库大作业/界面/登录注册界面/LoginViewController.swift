@@ -22,7 +22,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "登录"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: self, action: #selector(popVC))
     
+    }
+    
+    @objc func popVC() {
+        self.navigationController?.popViewController(animated: true)
     }
   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -83,7 +88,7 @@ class LoginViewController: UIViewController {
                         self.navigationController?.pushViewController(vc, animated: true)
                     }else{
                         //创建管理员单例
-                        User.login(userName: userName.text!, passWord: userPwd.text!, identifier: UserIdentifier.normalUser.rawValue)
+                        User.login(userName: userName.text!, passWord: userPwd.text!, identifier: UserIdentifier.administrator.rawValue)
                         //登录管理员界面
                         let vc = BasicUserViewController.init()
                         vc.identifier = UserIdentifier.administrator

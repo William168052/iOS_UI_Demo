@@ -140,7 +140,7 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
                 let cell = tableView.cellForRow(at: indexPath) as! BookTableViewCell
                 let ID = cell.IDLabel.text
                 if self.dataBaseTool.deleteFromTable(sql: "delete from Book_Table where BookID = ?", arguments: [ID!]) == false {
-                    print("删除书籍失败")
+                    UIView.alertMessage(title: "注意", message: "删除书籍失败", preferredStyle: .alert, target: self, compelete: nil)
                     
                 }else{
                     
@@ -149,6 +149,7 @@ class ManageBooksViewController: UIViewController,UITableViewDelegate,UITableVie
                     tableView.deleteRows(at: [indexPath], with: .left)
                 }
             }))
+            alert.addAction(UIAlertAction.init(title: "取消", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
         }

@@ -37,10 +37,23 @@ class BasicUserViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.title = "主页"
         // MARK:布局界面
         self.setUI()
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "退出登录", style: .plain, target: self, action: #selector(logOut))
         // Do any additional setup after loading the view.
         
     }
 
+    @objc func logOut() {
+        //释放用户单例
+        User.logOut()
+        for temp:UIViewController in (self.navigationController?.viewControllers)! {
+            if temp.isKind(of: BasicViewController.classForCoder()) {
+                self.navigationController?.popToViewController(temp, animated: true)
+            }
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -93,7 +106,7 @@ class BasicUserViewController: UIViewController,UITableViewDelegate,UITableViewD
             break
         case "还书":
             // MARK:跳转到还书界面
-            targetVC = ReturnBookViewController.init()
+            targetVC = BorrowBookViewController.init()
             break
         case "借阅记录":
             // MARK:跳转到借阅查询界面

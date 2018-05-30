@@ -9,11 +9,16 @@
 import UIKit
 
 class BasicViewController: UIViewController {
-
+    @IBOutlet weak var registBtn: UIButton!
+    
+    @IBOutlet weak var loginBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //创建数据库
-
+        self.title = "图书借阅管理系统"
+        self.view.layer.contents = UIImage.init(named: "bgImg")?.cgImage as Any
+        //设置圆角
+        self.registBtn.layer.cornerRadius = 10
+        self.loginBtn.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 
